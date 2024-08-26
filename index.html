@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +8,149 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awsome -->
     <script src="https://kit.fontawesome.com/7ac96cdf8f.js" crossorigin="anonymous"></script>
-    
+     <!-- daisy cdn -->
+      
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+       <!-- tsilwind -->
+        <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        } 
+      </script>
+      <!-- font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+      
+      <!-- style -->
+       <!-- .manrope-writer {
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }   -->
+      
 </head>
-<body>
-    
+<body class="manrope">
+    <header class="max-w-5xl mx-auto  bg-">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start flex ">
+                   <div class=" bg-[#ABEF5F] w-7 h-7 items-center content-center pl-1.5 rounded-full">
+                    <i class="fa-solid fa-arrow-right -rotate-45  text-xl"></i>
+                    
+                  </div>
+                 <div> <a class="btn btn-ghost text-2xl font-bold -ml-3">Rintorio</a></div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-bold">Home</a></li>
+                     <li><a>services</a></li> 
+                    <li><a>portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-3 lg:visible invisible">
+                    <i class="fa-solid fa-magnifying-glass  w-8 h-8 items-center content-center pl-1.5 rounded-full border "></i>
+                    <i class="fa-solid fa-cart-shopping  w-8 h-8 items-center content-center pl-1.5 rounded-full border "></i>
+                  <a class="btn rounded-full bg-[#ABEF5F]">Book Consult<div class=" bg-black w-7 h-7 items-center content-center  rounded-full">
+                    <i class="fa-solid fa-arrow-right -rotate-45  text-xl text-[#ABEF5F]"></i>
+                   </div></a>
+                  
+                </div>
+              </div>
+
+        </nav>
+        <!-- hero sector -->
+        <div class="hero  min-h-screen ">
+            <div class="hero-content text-center flex flex-col">
+                <div><img src="assets/banner.png" alt="" srcset=""></div>
+              <div class="">
+                <h1 class="text-5xl font-bold">Hello there</h1>
+                <p class="py-6">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                  quasi. In deleniti eaque aut repudiandae et a id nisi.
+                </p>
+                <div>
+                    <a class="btn rounded-full bg-[#ABEF5F] bg-opacity-50">Book Consult<div class=" bg-[#ABEF5F] w-7 h-7 items-center content-center  rounded-full">
+                        <i class="fa-solid fa-arrow-right -rotate-45  text-xl text-black"></i>
+                       </div></a>
+            </div>
+              </div>
+            </div>
+          </div>
+      
+    </header>
+    <!-- about us section -->
+    <main>
+      <!--  -->
+      <section>
+        <div class=" min-h-screen hero bg-base-200  flex lg:flex-col flex-row relative ">
+            <div class="absolute top-1 left-28 lg:visible invisible ">
+            <img class="" src="assets/Vector.png" alt="" srcset="">
+          </div>  
+          <div class="hero-content  lg:flex-row-reverse flex-col-reverse  border border-black">
+             <div class="  border  ">
+            <img
+              src="assets/Rectangle.png"
+              class=" rounded-lg shadow-2xl " />
+            </div> 
+
+            <div class="w-1/2 py-10 border  ">
+              <!-- button -->
+              <a class="btn rounded-full bg-[#FFFFFF]"><div class="  w-7 h-7 items-center content-center  rounded-full">
+                <i class="fa-solid fa-arrow-right rotate-50  text-xl text-[#]"></i>
+               </div>About us</a>
+
+               <!-- heading -->
+                <h1 class="text-3xl font-bold">We design thoughtful,<br> liveable spaces</h1>
+                <br>
+                <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and 
+                  modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                  <br>
+             
+              <!-- card-1 -->
+              
+                <div class="lg:flex bg-white rounded-lg flex my-4 p-4 ">
+                  <div><img src="assets/commercial.png" alt="" srcset=""></div>
+                  <div>
+                    <h4 class="font-extrabold">Commercial</h4>
+
+                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                  </div>
+                </div>
+              
+
+               <!-- card 2 -->
+
+               <div class="lg:flex bg-white rounded-lg flex my-4 p-4">
+                <img src="assets/residential.png" alt="" srcset="">
+                <div>
+                  <h4 class="font-extrabold">Residential</h4>
+
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+
+              
+            </div>
+            
+          
+            
+
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
 </body>
 </html>
