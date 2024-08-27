@@ -29,25 +29,46 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
       
-      <!-- style -->
-       <!-- .manrope-writer {
-        font-family: "Manrope", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-      }   -->
+       <style>
+        .rent{
+          font-family: Manrope;
+        }
+       </style>
       
 </head>
-<body class="manrope">
+<body class="rent">
     <header class="max-w-5xl mx-auto  bg-">
         <nav>
             <div class="navbar bg-base-100">
-                <div class="navbar-start  ">
-                   <div class=" bg-[#ABEF5F] w-7 h-7 items-center content-center pl-1.5 rounded-full">
+                <div class="navbar-start relative ">
+                   <div class=" bg-[#ABEF5F] w-7 h-7 lg:items-center  content-center pl-1.5 rounded-full">
                     <i class="fa-solid fa-arrow-right -rotate-45  text-xl"></i>
                     
                   </div>
                  <div> <a class="btn btn-ghost text-2xl font-bold -ml-3">Rintorio</a></div>
+                 <!-- icon -->
+                 <div
+                  tabindex="0" 
+                 role="button"
+                 class="btn btn-ghost lg:hidden -right-20 absolute "
+               >
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   class="h-5 w-5"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                 >
+                   <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M4 6h16M4 12h8m-8 6h16"
+                   />
+                 </svg>
+               </div>
+
+
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
@@ -66,6 +87,11 @@
                    </div></a>
                   
                 </div>
+
+   
+   
+
+
               </div>
 
         </nav>
@@ -93,7 +119,7 @@
     <main>
       <!--  -->
       <section>
-        <div class="  hero bg-base-200  flex lg:flex-col flex-row relative ">
+        <div class="lg:w:4/5 w-auto hero bg-base-200  flex lg:flex-col flex-row relative ">
             <div class="absolute top-1 left-28 lg:visible invisible ">
             <img class="" src="assets/Vector.png" alt="" srcset="">
           </div>  
@@ -120,9 +146,11 @@
               <!-- card-1 -->
               
                 <div class="lg:flex bg-white rounded-lg flex my-4 p-4 lg:w-auto w-[200px] overflow-auto">
-                  <div class=" lg:w-2/12 w-5/6 content-center gap-1"><img src="assets/commercial.png" alt="" srcset=""></div>
+                  <div class=" lg:w-2/12 w-auto content-center gap-1">
+                    <img src="assets/commercial.png" alt="" srcset="">
+                  </div>
                   <div>
-                    <h4 class="font-extrabold">Commercial</h4>
+                    <h4 class="font-bold">Commercial</h4>
 
                     <p>The barn house captivates with its blend of rustic charm and modern.</p>
                   </div>
@@ -134,7 +162,7 @@
                <div class="lg:flex bg-white rounded-lg flex lg:my-4 my-1 lg:p-4 p-1  lg:w-auto w-[200px]">
                 <div class="lg:w-2/12 w-5/6 content-center gap-1"><img src="assets/residential.png" alt="" srcset=""></div>
                 <div>
-                  <h4 class="font-extrabold">Residential</h4>
+                  <h4 class="font-bold">Residential</h4>
 
                   <p>The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
@@ -261,7 +289,7 @@
 
 
        <!-- input section -->
-       <section class="  mb-28 w-full bg-no-repeat bg-cover bg-[url('/assets/bg.jpg')]">
+       <section class="   w-full bg-no-repeat bg-cover bg-[url('/assets/bg.jpg')]">
         <div class=" lg:w-10/12 w-full mx-auto">
             <div class="text-center  p-20 ">
               <div class="items-center text-center ">
@@ -301,12 +329,45 @@
         <div class="text-center  my-9 mb-4">
           <textarea class="lg:w-[670px] w-full lg:h-[200px] h-[170px] lg: mx-auto lg:px-5 px-4 rounded-3xl" placeholder="Write your massage here" name="" id=""></textarea>
         </div>
+        <div class="  lg:w-[500px] h-auto mx-auto pb-3">
+          <a class="w-full btn rounded-full bg-[#ABEF5F] bg-opacity-50">Send Email<div class=" bg-[#ABEF5F] w-7 h-7 items-center content-center  rounded-full">
+              <i class="fa-solid fa-arrow-right -rotate-45  text-xl text-black"></i>
+             </div></a>
+       </div>
     </section>
 
 
     </main>
-    <footer>
-
-    </footer>
+    <footer class=" grid grid-cols-1 footer footer-center bg-[#1C1C1C] text-base-content pt-10 pb-32">
+      <div class="text-center mb-10 mt-10">
+          <a class="btn btn-ghost text-xl rent font-extrabold text-white">
+            <div>
+              <i
+                class="fa-solid fa-arrow-up rotate-45 flex h-7 w-7 bg-[#ABEF5F] rounded-full items-center justify-center"
+              ></i>
+            </div>
+            Rinterio</a <br>
+          <p class="text-[#737373] font-medium text-xl">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.
+          </p>
+      </div>
+      <nav class="grid grid-cols-1 lg:grid-flow-col gap-10 lg:gap-28">
+          <a class="text-[#E9E9E9] text-xl">Home</a>
+          <a class="text-[#E9E9E9] text-xl">Services</a>
+          <a class="text-[#E9E9E9] text-xl">Portfolio</a>
+          <a class="text-[#E9E9E9] text-xl">Blogs</a>
+          <a class="text-[#E9E9E9] text-xl">Contact Us</a>
+          
+      </nav>
+      <div class="mt-10">
+        <a class="btn rounded-full bg-[#ABEF5F]"
+        >Book Consult
+        <div>
+          <i
+            class="fa-solid fa-arrow-up rotate-45 flex h-7 w-7 bg-black rounded-full items-center justify-center text-white"
+          ></i>
+        </div>
+      </a>
+      </div>
+  </footer>
 </body>
 </html>
